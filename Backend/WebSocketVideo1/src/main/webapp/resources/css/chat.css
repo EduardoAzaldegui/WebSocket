@@ -1,0 +1,22 @@
+input#cajaMensaje{
+    width: 410px;
+}
+
+#contenedorPantalla{
+    width: 400px;
+}
+
+#pantallaChat{
+    border: 1px solid #CCCCCC;
+    border-right-color: #999999;
+    border-bottom-color: #999999;
+    height: 170px;
+    overflow-y: scroll;
+    padding: 5px;
+    width: 100%;
+}
+
+#pantallaChat p {
+    padding: 0;
+    margin: 0;
+}

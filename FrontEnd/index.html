@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apock web design</title>
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <script type="text/javascript" src="js/websocket.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" 
+    integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+</head>
+
+<body>
+<section class="body-chat">
+    <div class="seccion-titulo">
+        <h3>
+            <i class="fas fa-comments"></i>
+            Sistema de mensajeria
+        </h3>
+    </div>
+    <div class="seccion-usuarios">
+        <div class="seccion-lista-usuarios">
+            <div class="usuario">
+                <div class="avatar">
+                    <img src="img/avatar.png" alt="img">
+                    <span class="estado-usuario enlinea"></span>
+                </div>
+                <div class="cuerpo">
+                    <span> Nombre apellido</span>
+                    <span>detalles de mensaje</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="seccion-chat">
+        <div class="usuario-seleccionado">
+            <div class="avatar">
+                <img src="img/avatar.png" alt="img">
+            </div>
+            <div class="cuerpo">
+                <span>Nombre de usuario</span>
+                <span>Activo.</span>
+            </div>
+        </div>
+
+        <div class="panel-chat" id="panel-chat">
+
+
+            <div class="mensaje" id="other-user">
+                <div class="avatar">
+                    <img src="img/avatar.png" alt="img">
+                </div>
+                <div class="cuerpo">
+                    <div class="texto" id="texto">
+                        Lorem ipsum dolor sit, amet consectetur adipisicing, elit. Dolor eligendi voluptatum dolore voluptas iure.
+                    </div>
+                    <ul class="opciones-msj">
+                        <li>
+                            <button type="button">
+                                <i class="fas fa-times"></i>
+                            </button>
+                        </li>
+                        <li>
+                            <button type="button">
+                                <i class="fas fa-share-square"></i>
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+
+
+            <!-- derecha -->
+            <div class="mensaje left" id="self-user">
+                <div class="cuerpo">
+                    <div class="texto" id="texto">
+                        Lorem ipsum dolor sit, amet consectetur adipisicing, elit. Dolor eligendi voluptatum dolore voluptas iure.
+                    </div>
+                    <ul class="opciones-msj">
+                        <li>
+                            <button type="button">
+                                <i class="fas fa-times"></i>
+                            </button>
+                        </li>
+                        <li>
+                            <button type="button">
+                                <i class="fas fa-share-square"></i>
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+                <div class="avatar">
+                    <img src="img/avatar.png" alt="img">
+                </div>
+            </div>
+
+
+        </div>
+        <div class="panel-escritura">
+            <form class="textarea">
+                <textarea placeholder="Escribir mensaje" id="messageInput"></textarea>
+                <button type="button" class="enviar" onclick="enviarMensaje()">
+                    <i class="fas fa-paper-plane"></i>
+                </button>
+            </form>
+        </div>
+    </div>
+</section>
+</body>
+
+</html>
